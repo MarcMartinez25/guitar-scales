@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Fretboard from '@/components/Fretboard/Fretboard';
 import ScaleSelector from '@/components/ScaleSelector/ScaleSelector';
 
@@ -10,15 +10,10 @@ export default function Home() {
   const [tuning, setTuning] = useState<string[]>(['E', 'B', 'G', 'D', 'A', 'E']);
 
   const handleScaleChange = (newScale: string, newKey: string, newTuning: string[]) => {
-    console.log('Scale change:', { newScale, newKey, newTuning });
     setScale(newScale);
     setScaleKey(newKey);
     setTuning(newTuning);
   };
-
-  useEffect(() => {
-    console.log('Current state:', { scale, scaleKey, tuning });
-  }, [scale, scaleKey, tuning]);
 
   return (
     <main className="min-h-screen p-8 bg-slate-700">
