@@ -34,15 +34,15 @@ export default function Fretboard({
   }, [tuning, numFrets, scale, scaleKey]);
 
   return (
-    <div className="bg-white rounded-lg shadow-lg border border-gray-200 w-full">
+    <div className="bg-white rounded-lg shadow-lg border border-gray-200 w-full pt-4 pr-4">
       <div className="overflow-hidden">
         <div className="w-full">
-          <FretNumbers numFrets={numFrets} />
           <Strings 
             fretboard={fretboard} 
             tuning={tuning} 
             scaleNotes={scaleNotes}
           />
+          <FretNumbers numFrets={numFrets} />
         </div>
       </div>
     </div>
