@@ -20,6 +20,15 @@ An app that helps guitarists visualize scales across the fretboard.
    - Scale notes in light blue
    - Clear fret markers and string labels
 
+## Roadmap
+Things I would like to add in the future:
+- microphone access to highlight current note playing
+- more scales and tunings
+- add more instruments (ie: banjo, bass)
+- pattern focus ability
+- mix scales
+- show multiple scales
+
 ## Development
 
 This project uses:
